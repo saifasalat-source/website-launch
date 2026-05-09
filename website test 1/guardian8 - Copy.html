@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Questrial&family=Orbitron:wght@700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardian Installations | NYC Professional Vehicle Tech</title>
+    <link rel="icon" type="image/png" href="image_0.png">
+   <style>
+        /* --- CSS Reset & Variables --- */
+        :root {
+            --color-black: #303030;
+            --color-dark-gray: #1a1a1a;
+            --color-mid-gray: #333333;
+            --color-text-gray: #cccccc;
+            --color-white: #ffffff;
+            --color-accent: #3498db; 
+            --section-padding: 80px 20px;
+        }
+
+        /* --- This is the Camaro Background Fix --- */
+        #hero {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('backgroundaccord.png');
+            background-color: #1a1a1a; 
+            background-size: cover !important;
+            background-position: center center !important;
+            background-attachment: scroll !important; /* Forces image to show on mobile */
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        /* --- This is the Text Animation --- */
+        @keyframes fadeSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .reveal-text {
+            animation: fadeSlideUp 1s ease-out forwards;
+            opacity: 0;
+        }
+
+        .reveal-text {
+            animation: fadeSlideUp 1s ease-out forwards;
+            opacity: 0;
+        }
+
+/* --- PASTE IT HERE --- */
+.price-text {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    color: var(--color-accent);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+}        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* PASTE THE CODE HERE */
+        section, #socials-target, #about {
+            scroll-margin-top: 25vh;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: var(--color-black);
+            color: var(--color-white);
+            line-height: 1.6;
+        }
+
+        /* --- Typography --- */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 15px;
+            color: var(--color-white);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: var(--color-text-gray);
+        }
+
+        a {
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- Utilities --- */
+        .text-center { text-align: center; }
+        .highlight { color: var(--color-white); font-weight: bold; }
+
+        /* --- Buttons --- */
+        .btn-dark {
+            display: inline-block;
+            padding: 15px 35px;
+            background-color: transparent;
+            color: var(--color-white);
+            font-weight: 700;
+            text-transform: uppercase;
+            border: 2px solid var(--color-white);
+            letter-spacing: 1px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn-dark:hover {
+            background-color: var(--color-white);
+            color: var(--color-black);
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 15px 35px;
+            background-color: var(--color-white);
+            color: var(--color-black);
+            font-weight: 700;
+            text-transform: uppercase;
+            border: 2px solid var(--color-white);
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--color-white);
+        }
+
+        /* --- Header & Navigation --- */
+        header {
+            background-color: var(--color-black);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--color-dark-gray);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .branding a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+       
+        .logo-img {
+            height: 50px;
+            width: auto;
+            margin-right: 15px;
+        }
+
+        .brand-name {
+            color: var(--color-white);
+            font-size: 1.4rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: var(--color-white);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav ul li a:hover {
+            color: var(--color-accent);
+        }
+
+        /* --- Hero Section --- */
+        #hero {
+    background-color: var(--color-black);
+    padding: 100px 20px; 
+    text-align: center;
+    
+    /* Swap the link for your local file name here */
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('backgroundaccord.png');
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps that cool parallax effect */
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 4px 10px rgba(0,0,0,0.8); /* This makes text pop against a bright image */        }
+
+        .hero-sub {
+            color: var(--color-white); 
+            font-family: 'Questrial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+        }
+
+        /* --- Detailed Services Section --- */
+#services {
+    padding: var(--section-padding);
+    background-color: var(--color-black);
+}
+
+.service-detail-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    
+    /* THE SEPARATOR LINE YOU LOST */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2) !important; 
+    padding-bottom: 80px; /* Space between the text and the line */
+    margin-bottom: 80px;  /* Space after the line before the next service starts */
+    
+    flex-wrap: nowrap !important;
+    width: 100%;
+}
+
+/* This makes sure the very last service doesn't have a line hanging at the bottom */
+.service-detail-row:last-of-type {
+    border-bottom: none !important;
+    margin-bottom: 0;
+}
+
+/* 2. THIS FORCES THE ZIGZAG ON DESKTOP ONLY */
+@media (min-width: 769px) {
+    .service-detail-row.reverse { 
+        flex-direction: row-reverse !important; 
+    }
+}
+
+.service-text { 
+    flex: 1; 
+}
+
+        /* --- IMAGE LAYOUT --- */
+        .service-image-placeholder {
+    flex: 1;
+    /* CHANGE: We removed max-width: 400px so it can grow to fit the side-by-side look */
+    width: 100%; 
+    height: 350px; 
+    background-color: var(--color-dark-gray);
+    border: 1px solid #333333;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+        
+        .service-image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 1;
+            transition: transform 0.5s ease, opacity 0.3s ease;
+        }
+
+        /* Special fix for GPS and CarPlay */
+        .service-image-placeholder.gps-contain img,
+        .service-image-placeholder.carplay-contain img {
+            width: auto;
+            height: auto;
+            max-width: 95%;
+            max-height: 95%;
+            object-fit: contain; 
+        }
+
+        .service-image-placeholder:hover img {
+            transform: scale(1.1); 
+            opacity: 1;
+        }
+
+        .service-text h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    /* Changed from 4px to 1px for a cleaner, high-end feel */
+    border-left: 1px solid var(--color-white);
+    padding-left: 15px;
+}
+
+        /* --- Location & Hours Section --- */
+        #location {
+    padding: var(--section-padding);
+    background-color: var(--color-black); 
+}
+
+/* This is the part that forces them side-by-side */
+.location-grid, .contact-container { 
+    display: flex;
+    flex-direction: row; /* Forces horizontal alignment */
+    gap: 20px;           /* Adds space between cards */
+    width: 100%;
+}
+
+.info-card {
+    flex: 1;            /* Makes both cards the same width */
+    background: #1a1a1a; 
+    padding: 40px;
+    border-radius: 8px; 
+    border: 1px solid #333333; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4); 
+}
+/* Paste this right after your .info-card block */
+.hours-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0; /* Adds space under the "Business Hours" title */
+    width: 100%;
+}
+
+.hours-list li {
+    display: flex;
+    justify-content: flex-start; /* Aligns everything to the left */
+    align-items: center;
+    border-bottom: 1px solid #333333;
+    padding: 10px 0;
+}
+
+.day {
+    color: var(--color-text-gray);
+    /* This 60px ensures Mon, Tue, and Wed all take up the same space */
+    min-width: 60px; 
+    font-weight: 500;
+    display: inline-block;
+}
+
+.time {
+    color: var(--color-white);
+    font-weight: 700;
+    margin-left: auto; /* This pushes the time to the far right of the card */
+    text-align: right;
+}
+.hours-list li:last-child {
+    border-bottom: none;
+}
+
+.day {
+    color: var(--color-text-gray);
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+.time {
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-align: right; /* Keeps all the times perfectly aligned on the right */
+}
+HTML
+<div class="info-card">
+    <div>
+        <h3>Business Hours</h3>
+        <ul class="hours-list">
+            <li><span class="day">Mon</span><span class="time">9:00 AM - 6:00 PM</span></li>
+            <li><span class="day">Tue</span><span class="time">9:00 AM - 6:00 PM</span></li>
+            <li><span class="day">Wed</span><span class="time">9:00 AM - 6:00 PM</span></li>
+            <li><span class="day">Thu</span><span class="time">9:00 AM - 6:00 PM</span></li>
+            <li><span class="day">Fri</span><span class="time">9:00 AM - 6:00 PM</span></li>
+            <li><span class="day">Sat</span><span class="time">9:00 AM - 6:00 PM</span></li>
+            <li><span class="day">Sun</span><span class="time">9:00 AM - 6:00 PM</span></li>
+        </ul>
+    </div>
+</div>
+        .shop-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        .map-btn {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--color-accent);
+            text-decoration: underline;
+        }
+
+        /* --- Reviews Section --- */
+        #reviews {
+            padding: var(--section-padding);
+            background-color: var(--color-black);
+            text-align: center;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .review-card {
+           background-color: #1a1a1a; /* Darker than the body grey */
+    padding: 30px;
+    border-radius: 8px; /* Slightly rounder corners for a modern feel */
+    text-align: left;
+    border: 1px solid #666666; /* A subtle light border to define the edge */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Adds depth */
+        }
+
+        .stars { 
+            color: #f1c40f; 
+            letter-spacing: 3px; 
+            margin-bottom: 10px; 
+            display: block;
+        }
+        
+        .reviewer-name { 
+            font-weight: 700; 
+            margin-top: 15px; 
+            display: block; 
+            color: var(--color-white); 
+        }
+
+        /* --- About/Why Us --- */
+        #about {
+            padding: var(--section-padding);
+            text-align: center;
+            border-top: 1px solid var(--color-dark-gray);
+        }
+
+        /* --- Contact CTA --- */
+        #contact {
+            padding: 100px 20px;
+            background-color: var(--color-black);
+            text-align: center;
+            border-top: 1px solid var(--color-dark-gray);
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: #000000;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 1px solid #222222;
+        }
+
+        /* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    /* 1. Reset Header for Mobile */
+    .nav-container { 
+        flex-direction: column !important; 
+        align-items: center !important; 
+        padding: 15px 0 !important;
+    }
+    .logo { margin-right: 0 !important; margin-bottom: 10px; }
+    nav ul { justify-content: center !important; padding: 0 !important; display: flex !important; flex-wrap: wrap !important; }
+    nav ul li { margin: 5px !important; }
+
+    /* 3. Reset Location & Hours for Mobile */
+    .location-grid, .shop-split, .location-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    /* --- ADD THIS NEW PART BELOW --- */
+    .info-card {
+        padding: 50px 20px !important; /* Makes the card much taller */
+        width: 100% !important;
+    }
+    .map-container, .hours-info, .location-card {
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+    .hours-list, ul.hours {
+        display: inline-block !important;
+        text-align: left !important;
+        margin: 0 auto !important;
+    }
+}    .service-text h3 {
+    border-left: 4px solid #ffffff !important; /* Forces the side bar */
+    padding-left: 20px !important;
+    border-bottom: none !important;      /* Kills the underline */
+    display: block !important;
+    text-align: left !important;         /* Keeps it aligned left */
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+    .service-image-placeholder {
+        width: 100%;
+        max-width: 400px;                  /* Keep image from being too huge */
+        margin: 0 auto;                    /* Center the image box */
+    }
+
+    /* Adjust the 'Snap' point for mobile screens */
+    section, #socials-target {
+        scroll-margin-top: 15vh; 
+    }
+}
+
+            .location-grid { grid-template-columns: 1fr; }
+            .shop-split { grid-template-columns: 1fr; gap: 40px; } 
+            
+            .info-card { padding: 25px; }
+        }
+/* --- Consolidated Mobile Fixes --- */
+/* --- Consolidated Mobile Fixes --- */
+@media (max-width: 768px) {
+    /* This forces the specific "Professional Vehicle..." text to stay small */
+    h1.reveal-text, #hero h1.reveal-text {
+        font-size: 1.2rem !important; 
+        line-height: 1.4 !important;
+        white-space: normal !important;
+        width: 100% !important;
+        display: block !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+    }
+
+    /* This makes sure the container doesn't squash the text */
+    #hero {
+        padding-top: 120px !important;
+        height: auto !important;
+    }
+}  
+    /* REMOVED: The old #hero h1 { font-size: 2.5rem } that was breaking it */
+}
+            /* 2. Reset Header for Mobile */
+            .nav-container { 
+                flex-direction: column !important; 
+                align-items: center !important; 
+                padding: 15px 0 !important;
+            }
+            
+            nav ul { 
+                justify-content: center !important; 
+                padding: 0 !important; 
+                display: flex !important; 
+                flex-wrap: wrap !important; 
+            }
+            
+            nav ul li { margin: 5px !important; }
+
+    /* 🔑 This resets reverse so it doesn’t fight */
+    .service-detail-row.reverse {
+        flex-direction: column;
+    }
+
+    .service-image-placeholder {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .service-text h3 {
+        border-left: none;
+        border-bottom: 2px solid white;
+        display: inline-block;
+        padding-left: 0;
+    }
+}
+
+            /* 4. Reset Location & Hours for Mobile */
+            .location-grid, .shop-split {
+                display: flex !important;
+                flex-direction: column !important;
+                width: 100% !important;
+            }
+            
+            .info-card { padding: 25px !important; }
+            
+            /* Adjust the 'Snap' point for mobile screens */
+            section, #socials-target {
+                scroll-margin-top: 15vh !important; 
+            }
+        }
+    /* all your messy existing CSS above */
+
+
+/* === THE ABSOLUTE GRID FIX === */
+
+@media (min-width: 769px) {
+    .service-detail-row {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important; /* Forces two equal columns */
+        align-items: center !important;
+        gap: 60px !important;
+        margin-bottom: 100px !important;
+    }
+
+    /* This forces the zigzag by swapping the order of the grid items */
+    .service-detail-row.reverse .service-text {
+        grid-column: 2;
+    }
+    .service-detail-row.reverse .service-image-placeholder {
+        grid-column: 1;
+    }
+
+    .service-text {
+        text-align: left !important;
+    }
+
+    .service-image-placeholder {
+        width: 100% !important;
+        max-width: 500px !important;
+        height: 350px !important;
+    }
+}
+
+/* Keeps your mobile layout exactly as it was */
+@media (max-width: 768px) {
+    .service-detail-row {
+        display: flex !important;
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+}
+
+/* === Mobile Dropdown Navigation === */
+.menu-toggle {
+    display: none;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: var(--color-white);
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .nav-container {
+        flex-direction: row !important;
+        align-items: center !important;
+        padding: 0 16px !important;
+        position: relative;
+    }
+
+    .branding a {
+        min-width: 0;
+    }
+
+    .logo-img {
+        height: 42px;
+        margin-right: 10px;
+    }
+
+    .brand-name {
+        font-size: 1rem;
+        line-height: 1.1;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex: 0 0 44px;
+    }
+
+    .menu-toggle.is-open span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-toggle.is-open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.is-open span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    nav {
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 16px;
+        right: 16px;
+        z-index: 101;
+    }
+
+    nav ul {
+        display: none !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        justify-content: flex-start !important;
+        flex-wrap: nowrap !important;
+        padding: 8px 0 !important;
+        background-color: var(--color-dark-gray);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        box-shadow: 0 16px 30px rgba(0, 0, 0, 0.45);
+    }
+
+    nav ul.is-open {
+        display: flex !important;
+    }
+
+    nav ul li {
+        margin: 0 !important;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 14px 18px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    nav ul li:last-child a {
+        border-bottom: 0;
+    }
+}
+
+/* === Services Text Alignment === */
+#services,
+#services h2,
+#services .service-detail-row,
+#services .service-text,
+#services .service-text h3,
+#services .service-text p,
+#services .price-text {
+    text-align: left !important;
+}
+
+#services h2 {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+/* === Expandable Review Images === */
+.review-card {
+    position: relative;
+}
+
+.review-card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.review-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: auto;
+    min-height: 40px;
+    margin-top: 18px;
+    padding: 10px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.06);
+    color: var(--color-white);
+    cursor: pointer;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-transform: uppercase;
+    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+.review-toggle:hover,
+.review-toggle:focus-visible {
+    background-color: var(--color-white);
+    border-color: var(--color-white);
+    color: var(--color-black);
+    outline: none;
+}
+
+.review-toggle span {
+    display: inline-block;
+    font-size: 1rem;
+    transition: transform 0.25s ease;
+}
+
+.review-card.is-open .review-toggle span {
+    transform: rotate(180deg);
+}
+
+.review-expanded {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 22px;
+}
+
+.review-card.is-open .review-expanded {
+    display: grid;
+}
+
+.review-photo {
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 8px;
+    background-color: #111111;
+}
+
+.review-photo span {
+    display: block;
+    padding: 8px 10px;
+    color: var(--color-white);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.review-photo img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+@media (max-width: 560px) {
+    .review-expanded {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* === Mobile Hero Background === */
+@media (max-width: 768px) {
+    #hero {
+        background-image: url('backgroundaccordmobile.png') !important;
+    }
+}
+
+/* === Main Background Color === */
+html,
+body,
+#services,
+#location,
+#reviews,
+#about,
+#contact {
+    background-color: #303030 !important;
+}
+
+/* === Mobile Centering And Overflow Fix === */
+html,
+body {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        min-width: 0;
+    }
+
+    header,
+    section,
+    footer {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .container,
+    .nav-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    .branding {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .branding a {
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .brand-name {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    #hero {
+        width: 100% !important;
+        min-height: calc(100svh - 65px);
+        padding: 72px 16px 56px !important;
+        background-size: cover !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+    }
+
+    #hero .container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    #hero h1,
+    #hero h1.reveal-text {
+        width: 100% !important;
+        max-width: 100% !important;
+        font-size: clamp(2rem, 9.2vw, 2.25rem) !important;
+        line-height: 1.22 !important;
+        text-align: center !important;
+        overflow-wrap: normal !important;
+        word-break: normal !important;
+    }
+
+    #hero p {
+        max-width: 100% !important;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    #services h2 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .reviews-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    .location-grid,
+    .contact-container,
+    .shop-split,
+    .location-container,
+    .service-detail-row,
+    .review-card,
+    .info-card,
+    .map-container,
+    .hours-info,
+    .location-card,
+    .service-text,
+    .service-image-placeholder {
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .service-detail-row {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .service-image-placeholder,
+    .service-image-placeholder img,
+    .review-photo img {
+        max-width: 100% !important;
+    }
+}
+
+/* === Mobile Hero Text Spacing === */
+@media (max-width: 768px) {
+    #hero .hero-sub {
+        margin-bottom: 48px !important;
+    }
+
+    #hero h1,
+    #hero h1.reveal-text {
+        margin-bottom: 42px !important;
+    }
+
+    #hero p {
+        margin-bottom: 58px !important;
+    }
+}
+
+/* === Desktop Hero Title Stack === */
+.hero-title span {
+    display: block;
+}
+
+@media (min-width: 769px) {
+    #hero .hero-title {
+        font-family: 'Sora', 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        line-height: 1.08;
+        font-size: clamp(2.25rem, 5.4vw, 4rem);
+        max-width: 1180px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 28px;
+        text-shadow: 2px 4px 10px rgba(0,0,0,0.8);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title span {
+        display: inline;
+    }
+
+    .hero-title span + span::before {
+        content: ' ';
+    }
+}
+
+/* === Sticky Mobile Header === */
+@media (max-width: 768px) {
+    header {
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 1000 !important;
+    }
+}
+
+/* === Fixed Mobile Header === */
+@media (max-width: 768px) {
+    body {
+        padding-top: 65px !important;
+    }
+
+    header {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        z-index: 5000 !important;
+    }
+
+    #hero {
+        min-height: calc(100svh - 65px) !important;
+    }
+}
+
+/* === Subtle Scroll Reveal === */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    will-change: opacity, transform;
+}
+
+.scroll-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .scroll-reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* === Smooth Review Expansion And Lightbox === */
+.review-expanded {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-8px);
+    transition: max-height 0.45s ease, opacity 0.35s ease, margin-top 0.35s ease, transform 0.35s ease;
+}
+
+.review-card.is-open .review-expanded {
+    max-height: 900px;
+    opacity: 1;
+    margin-top: 22px;
+    transform: translateY(0);
+}
+
+.review-photo {
+    cursor: zoom-in;
+    transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.review-photo:hover {
+    border-color: rgba(255, 255, 255, 0.42);
+    transform: translateY(-2px);
+}
+
+.review-photo img {
+    transition: transform 0.35s ease;
+}
+
+.review-photo:hover img {
+    transform: scale(1.03);
+}
+
+.review-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.86);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+.review-lightbox.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.review-lightbox img {
+    max-width: min(94vw, 1100px);
+    max-height: 86vh;
+    object-fit: contain;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.65);
+    transform: scale(0.96);
+    transition: transform 0.25s ease;
+}
+
+.review-lightbox.is-open img {
+    transform: scale(1);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.35);
+    color: var(--color-white);
+    cursor: pointer;
+    font-size: 1.75rem;
+    line-height: 1;
+}
+
+.lightbox-close:hover,
+.lightbox-close:focus-visible {
+    background: var(--color-white);
+    color: var(--color-black);
+    outline: none;
+}
+
+@media (max-width: 560px) {
+    .review-expanded {
+        grid-template-columns: 1fr;
+    }
+
+    .review-lightbox {
+        padding: 14px;
+    }
+}
+
+/* === Compact Service Pricing === */
+.price-text {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.22);
+    color: var(--color-white);
+    letter-spacing: 0;
+}
+
+.price-text span {
+    color: var(--color-text-gray);
+    font-family: 'Questrial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.82rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.price-text strong {
+    color: var(--color-accent);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: 0;
+}
+
+
+/* === Mobile Hero Subtitle Higher === */
+@media (max-width: 768px) {
+    #hero .hero-sub {
+        display: block !important;
+        margin-top: -54px !important;
+        margin-bottom: 54px !important;
+    }
+}
+</style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="branding">
+                <a href="#">
+                    <img src="image_0.png" alt="Guardian Installations Shield Logo" class="logo-img">
+                    <span class="brand-name">Guardian Installations</span>
+                </a>
+            </div>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul id="primary-navigation">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#reviews">Testimonials</a></li>
+                    <li><a href="#about">Why Us</a></li>
+                    <li><a href="#instagram-cta">Socials</a></li>
+                    <li><a href="#contact" style="border: 1px solid white; padding: 8px 15px; border-radius: 4px;">Request Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <span class="hero-sub reveal-text" style="animation-delay: 0.1s;">Seamless. Specialized. Same-day Installations.</span>
+            <h1 class="hero-title reveal-text" style="animation-delay: 0.3s;"><span>PROFESSIONAL VEHICLE</span><span>INTEGRATION</span></h1>
+            <p class="reveal-text" style="animation-delay: 0.5s;">Seamless installations of automotive electronics. We provide a factory finish you'll fall in love with.</p>
+            <div class="reveal-text" style="animation-delay: 0.8s;">
+                <a href="#contact" class="btn-primary">Get a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" style="scroll-margin-top: 350px;">
+    <div class="container">
+        <h2>Services</h2>
+    </div>
+            
+    <div class="service-detail-row reverse">
+            <div class="service-text">
+                <h3>Dashcameras (2 & 3 Channel)</h3>
+                <p><strong>Why it matters:</strong> In NYC, a dashcam is your most vital witness. Insurance companies often dispute claims without video evidence.</p>
+                <p>We specialize in <strong>2-Channel (Front & Rear)</strong> and <strong>3-Channel (Front, Rear & Interior)</strong> setups. We hardwire every unit directly to your fuse box, enabling 24/7 parking mode to record hits while you are away, all while keeping your cigarette lighter socket free and wires completely hidden.</p>
+                <p class="price-text"><span>Starting at</span><strong>$150</strong></p>
+
+            </div>
+            <div class="service-image-placeholder">
+                <img src="dashcam.png" alt="Dashcam Installation">
+            </div>
+        </div>
+
+        <div class="service-detail-row">
+            <div class="service-text">
+                <h3>Remote GPS and Killswitch System</h3>
+                <p><strong>Why it matters:</strong> Control is security. Protect your car by ensuring that even if your vehicle is out of sight, it’s never out of your hands.</p>
+                <p>A hidden remote GPS and killswitch system bridges the gap between ownership and true control, ensuring that your vehicle remains exactly where it belongs even when you aren't behind the wheel. It serves as the ultimate failsafe, providing the immediate power to track and disable your car the moment its security is compromised.</p>
+                <p class="price-text"><span>Starting at</span><strong>$200</strong></p>
+            </div>
+            <div class="service-image-placeholder gps-contain">
+                <img src="gps.png" alt="GPS Installation">
+            </div>
+        </div>
+
+        <div class="service-detail-row reverse">
+            <div class="service-text">
+                <h3>Apple CarPlay/Android Auto Stereo Swap</h3>
+                <p><strong>Why it matters:</strong> Modernizing your dashboard isn’t just about the screen, it’s about reclaiming your focus with handsfree connectivity and the instant, automatic safety of a factory-integrated reverse camera.</p>
+                <p>Modernize your driving experience by bringing any older vehicle’s tech into the current era with seamless Android Auto and Apple CarPlay integration. It’s about more than just replacing old knobs with a sleek screen, it’s about having your maps, music, and communication exactly where they belong for a safer, more connected drive. We pair this with a hardwired reverse camera that activates instantly the moment you shift into gear, delivering a safe, and modern experience in the car you already love.</p>
+                <p class="price-text"><span>Starting at</span><strong>$200</strong></p>
+            </div>
+            <div class="service-image-placeholder carplay-contain">
+                <img src="UI.png" alt="CarPlay Interface">
+            </div>
+        </div>
+
+        <div class="service-detail-row">
+            <div class="service-text">
+                <h3>Radar Detector</h3>
+                <p><strong>Why it matters:</strong> Awareness is safety. Avoid speed traps and drive with confidence knowing what lies ahead.</p>
+                <p>We offer precision mounted radar detector installations that provide a clean, integrated look while ensuring peak performance on the road. By hardwiring the system directly into your vehicle’s power, we eliminate cluttered hanging cords and provide a seamless, always-ready defense that feels like a natural part of your interior.</p>
+                <p class="price-text"><span>Starting at</span><strong>$125</strong></p>
+            </div>
+            <div class="service-image-placeholder">
+                <img src="radar.png" alt="Radar Installation">
+            </div>
+        </div>
+
+         <div class="service-detail-row reverse">
+            <div class="service-text">
+                <h3>Reverse Camera</h3>
+                <p><strong>Why it matters:</strong> No more uncertainty. Eliminate blind spots and navigate tight spaces with the confidence of a clear, automatic view of exactly what’s behind you.</p>
+                <p>Our hardwired reverse camera systems provide the ultimate safety upgrade with zero effort required from the driver. Engineered to integrate seamlessly with your vehicle, the high-definition feed triggers automatically the instant you shift into reverse, giving you a view that eliminates blind spots utilizing a digital mirror accessory. Service automatically Included in stereo swap without mirror necessary.</p>
+                <p class="price-text"><span>Starting at</span><strong>$150</strong></p>
+            </div>
+            <div class="service-image-placeholder">
+                <img src="reversecamera.png" alt="Reverse Camera">
+            </div>
+        </div>
+
+        <div id="instagram-cta" class="text-center" style="margin-top: 80px; scroll-margin-top: 350px;">    
+        <a href="https://www.instagram.com/guardian.installations/" target="_blank" class="btn-dark" style="display: inline-flex; align-items: center; gap: 10px; padding: 12px 25px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Icon" style="height: 24px; width: 24px;">
+                <span>Check our work on Instagram</span>
+            </a>
+        </div>
+
+    </section>
+
+    <section id="location">
+        <div class="container">
+            <h2>Location & Hours</h2>
+            <div class="location-grid">
+                
+                <div class="info-card">
+                    
+                    <div class="shop-split">
+                        <div>
+                            <h3>Visit the Shop</h3>
+                            <p style="color: var(--color-white); font-size: 1.2rem; margin-top: 20px;">
+                                Guardian Installations<br>
+                                94-02 Linden Blvd<br>
+                                Ozone Park, NY 11417
+                            </p>
+                            <a href="https://www.google.com/maps/place/94-02+Linden+Blvd,+Ozone+Park,+NY+11417" target="_blank" class="btn-dark" style="font-size: 0.8rem; padding: 10px 20px;">Get Directions on Google Maps</a>
+                        </div>
+                        <div style="display: flex; align-items: center; text-align: center; margin: 40px 0; width: 100%;">
+  <div style="flex: 1; border-top: 2px solid white; height: 0;"></div>
+  <span style="padding: 0 20px; color: white; font-weight: 900; font-size: 1.2rem; text-transform: uppercase;">OR</span>
+  <div style="flex: 1; border-top: 2px solid white; height: 0;"></div>
+</div>
+                        <div 
+                            <h3><strong><b style="font-weight: 900 !important;">We Can Come To You</b></strong></h3>
+                            <p style="color: var(--color-white); font-size: 1.2rem; margin-top: 20px;">
+                                We serve clients across Brooklyn, Queens, and Long Island.<br>
+                                We can come to you for select onsite services. Call for questions and details.<br>
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div 
+                        <p style="margin-bottom: 5px; color: var(--color-white); font-weight: bold;">Have a Question?</p>
+                        <a href="tel:9175893704" style="font-size: 1.5rem; color: var(--color-white); font-weight: 800; display: block; margin-bottom: 5px;">917-589-3704</a>
+                        <p style="color: var(--color-accent); font-weight: 500; margin-bottom: 0;">Ask for Saif A.</p>
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+                    <div>
+                        <h3>Business Hours</h3>
+                        <ul style="list-style: none; margin-top: 20px; color: var(--color-text-gray);">
+                            <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #333333; padding: 8px 0;">
+                                <span>Mon</span>
+                                <span class="highlight">9:00 AM - 6:00 PM</span>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #333333; padding: 8px 0;">
+                                <span>Tue</span>
+                                <span class="highlight">9:00 AM - 6:00 PM</span>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #333333; padding: 8px 0;">
+                                <span>Wed</span>
+                                <span class="highlight">9:00 AM - 6:00 PM</span>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #333333; padding: 8px 0;">
+                                <span>Thu</span>
+                                <span class="highlight">9:00 AM - 6:00 PM</span>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #333333; padding: 8px 0;">
+                                <span>Fri</span>
+                                <span class="highlight">9:00 AM - 6:00 PM</span>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #333333; padding: 8px 0;">
+                                <span>Sat</span>
+                                <span class="highlight">9:00 AM - 6:00 PM</span>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; padding: 8px 0;">
+                                <span>Sun</span>
+                                <span class="highlight">9:00 AM - 6:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="container">
+            <h2>Client Testimonials</h2>
+            <p>See what our customers are saying about the Guardian Standard.</p>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-card-top">
+                        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    </div>
+                    <p>"Upgraded my 2013 BRZ with Carplay and a backup camera. My car feels brand new and I am super happy. Definetly reccomend!"</p>
+                    <span class="reviewer-name">- Eduardo F.</span>
+                    <button class="review-toggle" type="button" aria-expanded="false" aria-label="Show review images">View Photos <span aria-hidden="true">&#8964;</span></button>
+                    <div class="review-expanded">
+                        <div class="review-photo">
+                            <span>Before</span>
+                            <img src="reviewimagebefore1" data-review-image="reviewimagebefore1" alt="Before image for Eduardo F. review">
+                        </div>
+                        <div class="review-photo">
+                            <span>After</span>
+                            <img src="reviewimageafter1" data-review-image="reviewimageafter1" alt="After image for Eduardo F. review">
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-card-top">
+                        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    </div>
+                    <p>"My dad's old car needed this upgrade, plus the backup camera makes the world of difference. Amazing service, clean work, and great price."</p>
+                    <span class="reviewer-name">- Antonios G.</span>
+                    <button class="review-toggle" type="button" aria-expanded="false" aria-label="Show review images">View Photos <span aria-hidden="true">&#8964;</span></button>
+                    <div class="review-expanded">
+                        <div class="review-photo">
+                            <span>Before</span>
+                            <img src="reviewimagebefore2" data-review-image="reviewimagebefore2" alt="Before image for Michael T. review">
+                        </div>
+                        <div class="review-photo">
+                            <span>After</span>
+                            <img src="reviewimageafter2" data-review-image="reviewimageafter2" alt="After image for Michael T. review">
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-card-top">
+                        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    </div>
+                    <p>"I feel so much safer on the road with a dashcam, and I love that there are no dangling wires to ruin the look of my brand new car"</p>
+                    <span class="reviewer-name">- Anita A.</span>
+                    <button class="review-toggle" type="button" aria-expanded="false" aria-label="Show review images">View Photos <span aria-hidden="true">&#8964;</span></button>
+                    <div class="review-expanded">
+                        <div class="review-photo">
+                            <span>Front Camera</span>
+                            <img src="reviewimagebefore3" data-review-image="reviewimagebefore3" alt="Front camera image for Sarah L. review">
+                        </div>
+                        <div class="review-photo">
+                            <span>Rear Camera</span>
+                            <img src="reviewimageafter3" data-review-image="reviewimageafter3" alt="Rear camera image for Sarah L. review">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container about-content">
+            <h2>The Guardian Standard</h2>
+            <p>At Guardian Installations we don't just install accessories. We integrate them so perfectly you’d think the car came off the lot that way. Our obsession with the details is what drives this business. Nothing but clean wiring, solid connections, and zero shortcuts, because your car is a representation of the hard work you put in. We honor that by never cutting corners, when you trust your car to us, you’re getting a professional standard of work where 'good enough' never makes the cut.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Ready to Upgrade?</h2>
+            <div class="contact-intro">
+                <p>Click the button below to provide your vehicle details and get a custom quote.</p>
+                <br>
+                <a href="https://tally.so/r/3qpvEO" class="btn-primary" target="_blank">Start Service Request</a>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const primaryNavigation = document.querySelector('#primary-navigation');
+
+        menuToggle.addEventListener('click', () => {
+            const isOpen = primaryNavigation.classList.toggle('is-open');
+            menuToggle.classList.toggle('is-open', isOpen);
+            menuToggle.setAttribute('aria-expanded', isOpen);
+            menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+        });
+
+        primaryNavigation.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                primaryNavigation.classList.remove('is-open');
+                menuToggle.classList.remove('is-open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                menuToggle.setAttribute('aria-label', 'Open navigation menu');
+            });
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('.review-toggle').forEach((button) => {
+            button.addEventListener('click', () => {
+                const card = button.closest('.review-card');
+                const isOpen = card.classList.toggle('is-open');
+                button.setAttribute('aria-expanded', isOpen);
+                button.setAttribute('aria-label', isOpen ? 'Hide review images' : 'Show review images');
+            });
+        });
+
+        document.querySelectorAll('img[data-review-image]').forEach((image) => {
+            const baseName = image.dataset.reviewImage;
+            const sources = [baseName, `${baseName}.png`, `${baseName}.jpg`, `${baseName}.jpeg`, `${baseName}.webp`];
+            let sourceIndex = 0;
+
+            image.addEventListener('error', () => {
+                sourceIndex += 1;
+                if (sourceIndex < sources.length) {
+                    image.src = sources[sourceIndex];
+                }
+            });
+
+            image.src = sources[0];
+        });
+    </script>
+
+    <script>
+        const revealItems = document.querySelectorAll('.service-detail-row, #location .info-card, .review-card, #about .about-content, #contact .contact-intro');
+
+        if ('IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.16, rootMargin: '0px 0px -8% 0px' });
+
+            revealItems.forEach((item) => {
+                item.classList.add('scroll-reveal');
+                revealObserver.observe(item);
+            });
+        } else {
+            revealItems.forEach((item) => item.classList.add('is-visible'));
+        }
+    </script>
+
+    <div class="review-lightbox" aria-hidden="true">
+        <button class="lightbox-close" type="button" aria-label="Close enlarged review image">&times;</button>
+        <img src="" alt="">
+    </div>
+
+    <script>
+        const reviewLightbox = document.querySelector('.review-lightbox');
+        const reviewLightboxImage = reviewLightbox.querySelector('img');
+        const reviewLightboxClose = reviewLightbox.querySelector('.lightbox-close');
+
+        const closeReviewLightbox = () => {
+            reviewLightbox.classList.remove('is-open');
+            reviewLightbox.setAttribute('aria-hidden', 'true');
+            reviewLightboxImage.src = '';
+            reviewLightboxImage.alt = '';
+        };
+
+        document.querySelectorAll('.review-photo img').forEach((image) => {
+            image.addEventListener('click', () => {
+                reviewLightboxImage.src = image.currentSrc || image.src;
+                reviewLightboxImage.alt = image.alt;
+                reviewLightbox.classList.add('is-open');
+                reviewLightbox.setAttribute('aria-hidden', 'false');
+            });
+        });
+
+        reviewLightboxClose.addEventListener('click', closeReviewLightbox);
+        reviewLightbox.addEventListener('click', (event) => {
+            if (event.target === reviewLightbox) {
+                closeReviewLightbox();
+            }
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && reviewLightbox.classList.contains('is-open')) {
+                closeReviewLightbox();
+            }
+        });
+    </script>
+</body>
+</html>
